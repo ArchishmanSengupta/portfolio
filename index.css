@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700|Roboto:300,400,500,700,900&amp;display=swap");
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.highlight-light {
+    color: #222;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hero-h1 {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #bbb;
+    font-size: 100px;
+    line-height: 100px;
+}
+
+
+@media (max-width: 565px) {
+    .section-heading {
+    font-size: 40px !important;
+    }
+}
+html {
+    scroll-behavior:smooth;
+}
+body {
+    color: #777777;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.625em;
+    position: relative;
+}
+
+.nav-link{
+    font-size: 25px;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .container {
+    overflow: auto;
+  }
+  
+  .vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+  
