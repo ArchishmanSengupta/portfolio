@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .hero-h1 {
-    max-width: 900px;
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     color: #bbb;
@@ -63,5 +63,15 @@ p {
   
     display: flex;
     align-items: center;
-  }
-  
+}
+
+.section.about-me-home {
+    position: relative;
+}
+
+.section {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+}
