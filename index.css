@@ -265,4 +265,25 @@ p {
   font-size: 15px; }
   .blog-entry .meta > div a {
     font-size: 15px;
-    color: #8c8c8c; }
+    color: #8c8c8c; 
+  }
+ svg{
+   background:#fff;
+ }
+ svg text{
+   font-size: 5rem;
+   stroke-width:  3px;
+   fill: transparent;
+   stroke: #000;
+   letter-spacing: 2px;
+   animation: effect 6s infinite alternate ;
+ }
+ @keyframes effect{
+   0%{
+     stroke-dasharray: 0 70%;
+   }
+   100%{
+     stroke-dasharray: 50% 0;
+     stroke-dashoffset: 10%;
+   }
+ }
