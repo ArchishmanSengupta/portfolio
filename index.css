@@ -28,24 +28,46 @@ h3{
     font-size: 40px !important;
   }
 }
+@media screen and (max-width: 1060px) {
+  #primary { width:67%; }
+  #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  #primary { width:100%; }
+  #secondary { width:100%; margin:0; border:none; }
+}
+@media (min-device-width:600px) {
+  img[data-src-600px] {
+      content: attr(data-src-600px, url);
+  }
+}
+
+@media (min-device-width:800px) {
+  img[data-src-800px] {
+      content: attr(data-src-800px, url);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
 body {
   color: #777777;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
+  font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
+  font-size: 6vw;
   font-weight: 400;
   line-height: 1.625em;
   position: relative;
 }
 
 .hero-h1 {
-  max-width: 1100px;
+  max-width: 1000px;
+  max-height: fit-content;
   margin-right: auto;
   margin-left: auto;
   color: rgb(187,187,187);
-  font-size: 100px;
+  font-size: 6vw;
   line-height: 100px;
 }
 .highlight-light{
@@ -53,7 +75,7 @@ max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   color: rgb(22, 21, 22);
-  font-size: 100px;
+  font-size: 6vw;
   line-height: 100px
 
 }
