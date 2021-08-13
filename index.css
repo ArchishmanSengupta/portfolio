@@ -60,6 +60,42 @@ body {
   line-height: 1.625em;
   position: relative;
 }
+/* .container{
+  position: relative;
+}
+.sun, .moon{
+  height: fit-content;
+  weight: fit-content;
+  font-size: 10rem;
+}
+
+.moon{
+  position: absolute;
+  inset: 0;
+}
+.sun-logo{
+  opacity:1;
+    transform: translate(0) rotateZ(50deg);
+  
+}
+.moon-logo{
+  opacity: 0;
+  transform: translate(20%) rotateZ(50deg);
+}
+.animate-moon{
+  opacity:1 ;
+  transform: translateY(0%) rotate(0deg);
+  color: aliceble;
+}
+
+.moon-logo{
+  opacity:0 ;
+  transform: translateY(20%) rotateZ(50deg);
+  transition: all 1s ease-out;
+}
+.dark{
+  background-color: black;
+} */
 
 .hero-h1 {
   max-width: 1000px;
