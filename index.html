@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <title>Archishman Sengupta</title>
+    <link rel="shortcut icon" href="title_logo.png"/>
 
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -18,15 +19,17 @@
 
 <body>
     <div class="hero">
-        
-        <div class="neon-light"></div>
+        <div class="neon-light">
+
+        </div>
     
     <nav class="navbar navbar-expand-sm navbar-light mb-1">
         <ul class="navbar-nav">
             <li class="nav-item">
                 
                 <a class="nav-link" href="https://drive.google.com/file/d/1tio9KY-DkHj6F6cNP5VGm8pCPtjkdQax/view?usp=sharing">Resume</a>
-                
+                <!-- <div className="banner--fadeBottom">
+                </div> -->
             </li>
         </ul>
     </nav>
@@ -51,15 +54,19 @@
       <i class="fas fa-moon"></i>
     </div>
   </div> -->
-
+  
     <div class="responsive-nav-menu">
         <!-- <a href="/work" class="nav-link-mobile">
           Work</a><a href="/about" class="nav-link-mobile">About</a><a href="/blog" class="nav-link-mobile">Blog</a><a href="/contact" class="nav-link-mobile">Contact</a></div></header><div class="section hero"> -->
             <h1 class="hero-h1">Building Softwares to <span class="highlight-light">solve real life problems</span>
             </h1>
           </div>
-
+         
         </div>
+
+<!-- ---------------------------Wrapper----------------------------------------- -->
+
+       <img src="moon.png" id="icon">
     <div class="container">
         <section class="landing">
             <div class="row vertical-center">
@@ -83,12 +90,16 @@
           />
     </div>
       <section class="mt-4 mb-4">
-        <h4 class="display-4">A little about me,</h4>
-        <div class="row">
-            <div class="col-lg-6 wrap text-left">
-                <div class="about-desc">
-                    <h1 class="bold-text">About</h1>
-                    <div class="pt-5">
+        
+
+            <h4 class="display-4">A little about me,</h4>
+            <div class="containeri">
+                <div class="box">
+                    <div class="row">
+                         <div class="col-lg-6 wrap text-left">
+                                <div class="about-desc">
+                                    <h1 class="bold-text">About</h1>
+                                        <div class="pt-5">
                         <h2 class="mb-5">Hello!</h2>
                         <p>Hi! 👋 I'm Archishman, an 18-year-old CSE undergrad who is interested in Software Development, Developer Relations, UI/UX Design, and Product Management.
                             Preferred pronouns: He/His/Him 👦
@@ -97,6 +108,8 @@
                             Currently, I'm pursuing my career as an App Developer 👩🏻‍💻 with 5 years of experience in the Web &
                             6 months in the App Development field. I share my learnings through speaking engagements 🗣️& write-ups ✍🏻. Software Engineering for me is as much about people as it is about technology which is why I also identify myself as an Open-Source advocate 💖.
                         </p>
+                    </div>
+                </div>
 
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
                         <a href="archishman1808@gmail.com" class="fa fa-envelope"></a>
@@ -505,6 +518,7 @@
            
 
 </div>
+<!-- </main> -->
 
     <!-- Scripts -->
     <!-- <script>
@@ -514,7 +528,17 @@
   document.querySelector("body").classList.toggle("dark");
 })
     </script> -->
-    <!-- <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>-->
+    <script>
+        var icon=document.getElementById("icon");
+        icon.onclick= function (){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="sun.png";
+            }else{
+                icon.src="moon.png";
+            }
+        }
+    </script>
 </body>
 </html>
     

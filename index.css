@@ -8,7 +8,7 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   
-  color: #222222;
+  color: var(--primary-color);
   line-height: 1.2em;
   margin-bottom: 0;
   margin-top: 0;
@@ -16,7 +16,7 @@ h6 {
 }
 h3{
   font-family: "Poppins", sans-serif;
-  color: #c5c0c0;
+  color:  var(--primary-color);
   line-height: 1.2em;
   margin-bottom: 0;
   margin-top: 0;
@@ -53,49 +53,27 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: #777777;
+  color: #fff;
   font-family: "Google Sans", Roboto, Arial, Helvetica, sans-serif;
   font-size: 6vw;
   font-weight: 400;
   line-height: 1.625em;
   position: relative;
 }
-/* .container{
-  position: relative;
+#icon{
+  width:30px;
+  cursor: pointer;
 }
-.sun, .moon{
-  height: fit-content;
-  weight: fit-content;
-  font-size: 10rem;
-}
-
-.moon{
-  position: absolute;
-  inset: 0;
-}
-.sun-logo{
-  opacity:1;
-    transform: translate(0) rotateZ(50deg);
+:root{
   
+  --primary-color: #000106;
+  --secondary-color: #fff;
 }
-.moon-logo{
-  opacity: 0;
-  transform: translate(20%) rotateZ(50deg);
-}
-.animate-moon{
-  opacity:1 ;
-  transform: translateY(0%) rotate(0deg);
-  color: aliceble;
+.dark-theme{
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
 }
 
-.moon-logo{
-  opacity:0 ;
-  transform: translateY(20%) rotateZ(50deg);
-  transition: all 1s ease-out;
-}
-.dark{
-  background-color: black;
-} */
 .hero{
   height: 100vh;
   weight: 100%;
@@ -105,7 +83,7 @@ body {
   position: relative;
 }
 .hero h1{
-  color:#fff;
+  color:var(--secondary-color);
   text-align: center;
   width:100%;
   position: absolute;
@@ -161,6 +139,29 @@ body {
       capacity: 1;
   }
 }
+.banner--fadeBottom{
+  height: 9.4rem;
+  background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111
+  );
+}
+/* .containeri{
+  position: relative;
+  width: 2000px;
+  height: 1000px;
+  margin: 240px auto;
+  background: #000;
+}
+.containeri .box{
+  position: relative;
+  width:calc(400px- 50px);
+  height: calc(300px- 30px);
+  background:#fff;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+} */
 .hero-h1 {
   max-width: 1000px;
   max-height: fit-content;
@@ -236,7 +237,7 @@ p {
   width: 50px;
   display: block;
   float: left;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--secondary-color);
   border-radius: 50%;
   position: relative;
 }
@@ -305,7 +306,7 @@ p {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.08);
+  background:var(--secondary-color);
   transition: ease-in-out 0.3s;
 }
 
@@ -326,7 +327,7 @@ p {
 }
 
 .interests .icon-box:hover {
-  background: rgba(122, 122, 122, 0.12);
+  background: var(--secondary-color);
 }
 
 .bg-text {
@@ -400,7 +401,7 @@ p {
     color: #8c8c8c; 
   }
  svg{
-   background:#fff;
+   background:var(--secondary-color);
  }
  svg text{
    font-size: 5rem;
